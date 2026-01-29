@@ -1,0 +1,151 @@
+.inventory-container {
+  max-width: 1200px;
+  margin: 24px auto;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+}
+
+.inventory-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 18px;
+}
+
+.inventory-header h1 {
+  margin: 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+.inventory-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.inventory-actions button {
+  background: #5346e5;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+}
+
+.inventory-table th,
+.inventory-table td {
+  padding: 12px 10px;
+  text-align: left;
+  border-bottom: 1px solid #e6e9ef;
+}
+
+.inventory-table th {
+  background: #f8fafc;
+  font-weight: 700;
+  color: #375143;
+}
+
+.stock-low {
+  color: #b91c1c;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .inventory-container {
+    margin: 12px;
+    padding: 12px;
+  }
+
+  .inventory-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .inventory-actions {
+    width: 100%;
+    justify-content: flex-start;
+  }
+}
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup-box {
+  background: white;
+  padding: 20px;
+  width: 350px;
+  border-radius: 20px;
+  box-shadow: 0px 30px 10px rgba(0, 0, 0, 0.2);
+}
+
+.popup-box input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}
+.cust-btn {
+  display: flex;
+  justify-content:space-between;
+  gap: 10px;       /* spacing BETWEEN buttons */
+}
+
+.cust-btn .add-btn,
+.cust-btn .cancel-btn {
+  width: 80px;         /* SAME SIZE */
+  padding: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+/* Button colors */
+.cust-btn .add-btn {
+  background-color: rgb(21, 0, 128);
+}
+
+.cust-btn .cancel-btn {
+  background-color: red;
+}
+
+.cust-btn .add-btn,
+.cust-btn .cancel-btn {
+  width: 80px;
+  padding: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  color: white;
+  text-align: center;
+}
+
+/* Button colors */
+.cust-btn .add-btn {
+  background-color:green;
+  margin-right:190px;
+}
+
+.cust-btn .cancel-btn {
+  background-color: red;
+}

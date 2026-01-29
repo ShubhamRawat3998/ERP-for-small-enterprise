@@ -1,0 +1,163 @@
+.customer-container {
+    padding: 20px;
+    background: #f7f7fc;
+    min-height: 100vh;
+    font-family: "Segoe UI", sans-serif;
+    color:#222;
+}
+
+/* FIXED — Dark mode now overrides correctly */
+.customer-container.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+.dark-mode .customer-table,
+.dark-mode .input-box {
+    background: #1e1e1e;
+    color: white;
+    border-color: #555;
+}
+
+.dark-mode .table-header {
+    background: #333;
+    color: #fff;
+}
+
+.dark-mode .table-row:hover {
+    background: #2a2a2a;
+}
+
+.dark-mode .add-btn {
+    background: #5c6bc0;
+}
+
+.dark-mode .delete-btn {
+    background: #d32f2f;
+}
+
+.dark-mode .edit-btn {
+    background: #0288d1;
+}
+.title{
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:15px;
+}
+.dark-toggle{
+    background:#333;
+    color:white;
+    padding:8px 18px;
+    border:none;
+    cursor:pointer;
+    border-radius:6px;
+    margin-bottom:16px;
+}
+.customer-container.dark-mode .dark-toggle {
+    background: #eee;
+    color: #222;
+}
+.form-grid{
+   display:grid;
+   grid-template-columns:repeat(auto-fit,minmax(230px,1fr)); 
+}
+.input-box{
+    padding:10px;
+    border-radius:6px;
+    border:1px solid #bbb;
+    font-size:16px;
+    margin-bottom:10px;
+}
+.add-btn{
+    background:#4caf50;
+    padding:10px 18px;
+    border:none;
+    color:white;
+    cursor:pointer;
+    border-radius:6px;
+    margin-bottom:20px;
+    font-size:16px;
+}
+.add-btn:hover{
+    opacity:0.9;
+}
+.table-wrapper{
+    overflow-x:auto;
+}
+.customer-table{
+    width:100%;
+    border-collapse:collapse;
+    margin-top:10px;
+}
+.table-header{
+    background:#4a6cf7;
+    color:white;
+}
+.customer-table th,
+.customer-table td{
+    padding:12px;
+    text-align:left;
+    border:1px solid #ddd;
+}
+.table-row:hover{
+    background:#f1f1f1;
+}
+.edit-btn{
+    background:#0288d1;
+    padding:6px 12px;
+    border:none;
+    color:white;
+    margin-right:6px;
+    border-radius:5px;
+    cursor:pointer;
+}
+.delete-btn{
+    background:#d32f2f;
+    padding:6px 12px;
+    border:none;
+    color:white;
+    border-radius:5px;
+    cursor:pointer;
+}
+.edit-btn:hover,
+.delete-btn:hover{
+    opacity:0.85s;
+}
+.modal-overlay{
+    position:fix;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(0,0,0,0.6);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.modal-box{
+    background:white;
+    padding:25px;
+    border-radius:10px;
+    width:350px;
+    box-shadow:0 0 15px rgba(0,0,0,0.3);
+}
+.customer-container .dark-mode .modal-box{
+    background:#1e1e1e;
+    color:white;
+}
+.update-btn{
+    background:#4caf50;
+    padding:8px 18px;
+    border:none;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+    margin-right:10px;
+}
+.close-btn{
+    background:#777;
+    padding:8px 18px;
+    border:none;
+    color:white;
+    border-radius:6px;
+    cursor:pointer;
+}
